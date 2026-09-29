@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        border-width: 100%;
+    }
+
+/* Header */
+#header {
+    width: 100%;
+    height: 100px;
+    display: flex; text-align: center; border-width: 100%;
+    border-width: 0px 0px 2px 0px;
+    border-style:solid;
+    background-color: lavender; 
+}
+.logo {
+    width: 20%; height: auto;
+    
+    display: flex; text-align: center;gap: 10px;
+
+}
+.logoh2{
+    margin: 10PX; font-weight: bold; padding: 10PX;
+    width: auto; text-align: left;
+    color: purple;
+      font-style: italic;
+    font-size:25px; font-family: 'Times New Roman', Times, serif;
+    
+}
+.menu {
+    width: 60%;
+}
+.btn {
+    width: 30%;
+}
+ul {
+    display: flex;
+    list-style-type: none;   
+   align-items: center; gap: 10px;
+}
+li,
+button {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    background-color: purple;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+a {
+    text-decoration: none;
+}
+.header-btn {
+    margin-left: 180px;
+    margin-top: 13px; white-space:nowrap;
+}
+/* Hero Bar */
+#herobar {
+   background-image: url("img.jpg");
+    background-repeat: norepeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 500px; 
+}
+
+/* About Us */
+#About {
+    background-color:lavender;
+    width: 100%; box-sizing:border-box; background-color: lavender;
+    padding: 5px; margin: 5px; border-width: 100%;
+    
+}
+.about-h2 {
+    font-size: 40px;
+    color: purple; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;  background-color: lavender; 
+}
+.about-me {
+    display: flex; align-items: center; box-sizing: border-box;
+   padding: 25px;
+    width: 100%; 
+}
+.about-para,.about-img
+ {
+ width: 50%; margin: 10px;
+}
+
+#about {
+    width: 500px; height: 300px;border-radius: 20px;
+}
+
+.about-para p {
+    padding-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Section with Cards */
+#section {
+    background-color: lavender;
+    width: 100%;
+    height: 100%;
+    padding:5px;
+    margin-top: 5px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom:20px;
+    border-radius: 20px;
+    border-bottom-style: groove;
+    font-size: 20px;
+}
+.main-heading1{ 
+    text-align: center;
+    color: purple;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+.p {
+    font-size: 25px !important;
+}
+#p {
+    font-size: 50px;
+    line-height: 80px;
+}  
+ 
+table{
+    background-color: lavender; font-family: 'Times New Roman', Times, serif;
+    font-size: 25px; text-align: center; width: 100%; color: black; border-width: 100%;
+}
+
+
+#Menu {
+    background-color: lavender; font-family: 'Times New Roman', Times, serif;
+ font-size: 45px; text-align: center;margin: 5PX;padding: 5PX; color: purple; 
+ border-width: 100%;
+}
+
+
+
+/* contact us*/
+#contact {
+    background-color: lavender ;  font-family:'Times New Roman', Times, serif;
+   text-align: center ; padding: 40px 50px ; margin: 5px;
+}
+ #contact p{
+    font-family:'Times New Roman', Times, serif; font-size: 35px;background-color: lavender;
+font-size: medium   ; color:black;padding:10px; margin: 0;
+}
+#contact h2{
+    color: purple; font-size: 30px; margin-bottom: 20px;text-align: center; 
+    
+}
+
+/* contact form */
+form{
+    margin:30px auto;
+    padding:100px ;
+    background-color: lavender;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 12px;
+    font-size: 20px;
+    max-width: 400px;
+    text-align: center;
+    }
+   form h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    form button{
+    margin-top: 15px;
+    padding: 10PX 20PX ;
+    background-color: purple;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    }
+    Form select{
+        margin: auto;
+    padding: 20PX 20PX ;
+    background-color:lavender;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold; 
+
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    form label{
+        display: block;
+        margin: 12px;
+        font-weight: bold;
+    }
+    form input,
+    form textarea{
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid ;
+        border-radius: 4px;
+    }
+    /* footer */
+#Footer{
+color: black;
+text-align: left;font-family: 'Times New Roman', Times, serif; ;font-size:20px ;
+background-color: lavender; padding: 5PX; margin: 5PX; border-width: 100%;
+}
+#Footer h2{
+    color: purple; font-family: 'Times New Roman', Times, serif;font-size: 45PX;
+ padding: 5px; margin: 5px;
+}
+
+</Style>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="logo">
+            <a href="">
+                <img src="img.png" alt=" logo" height="100" width="100"></a> 
+            <a href="">
+                <h2 class="logoh2">Food<br>Hub</h2>
+            </a>
+    </div>
+        <div class="menu">
+            <ul>
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#About">
+                    <li>About us</li>
+                </a>
+                <a href="#Menu">
+                    <li>Menu</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+     
+        <div class="btn">
+            <button class="header-btn">Order Now</button>
+        </div>
+     </div>
+    
+
+    <!-- Hero Banner -->
+    <div id="herobar"></div>
+
+    <!-- About Us -->
+    <div id="About">
+        <h2 class="about-h2">About Us</h2>
+        <div class="about-me">
+            <div class="about-para">
+                <p>We are home-based kitchen making fresh,tasty meal with clean ingredients,just like home.
+                    <br><br>
+                    Every order is cooked fresh after you place it. so you enjoy real home-cooked taste with your loved ones.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQau2oe3OkEOZzoccWvK_pqq7HRYu6euY8BzGqJ8dtYDA&s=10" alt=" home cooked food" class="about">
+            </div>
+        </div>
+    </div>
+
+    <!-- Section with Cards -->
+    <div id="section">
+        <h2 class="main-heading1">Our Services</h2>
+        <p class="p" id="p">Hello!<br>
+            Fresh Food, Made With Love<br>
+            Delicious homemade meals delivered fresh and fast to your doorstep.</p>
+        <div class="card">Fast Delivery</div>
+        <div class="card">Cooked Fresh</div>
+        <div class="card">Easy Ordering</div>
+    </div>
+
+<!-- menu table -->
+ <div id="Menu"> 
+        <h2>Menu</h2>
+         <table border="1"> 
+         
+<tr>
+     <th>Zinger Burger</th>
+     <td> 500</td>
+    </tr>
+<tr> 
+    <th>Chicken Burger</th>
+    <td> 400</td>
+</tr>
+<tr> 
+    <th>Beef Burger</th>
+    <td> 450</td>
+</tr>
+<tr> 
+    <th>Zinger Roll</th>
+    <td> 350</td>
+</tr>
+<tr> 
+    <th>Arabic Nuggest 6(Pcs)</th>
+    <td> 300</td>
+</tr>
+    </table>
+ </div>
+
+
+
+
+<!-- Contact -->
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <p>Call or WhatsApp: 03458691078</p>
+        <p>Order one day before for bulk orders.</p>
+    </div>
+
+
+
+
+ <!-- form -->
+    <form> 
+        <h2> Place Your Order </h2> 
+<label>Name:</label>
+<input type="text" required>
+<br><br>
+
+<label> Email:</label>
+<input type="Email">
+<br><br>
+
+<label> Contact Number:</label>
+<input type="tel" required>
+<br><br>
+
+<label> Delivery Address:</label>
+<input type="text" required> 
+<br><br>
+
+<label> Select items</label>
+<input type="checkbox" name="food"> Zinger Burger
+<input type="checkbox" name="food"> Chicken Burger
+<input type="checkbox" name="food"> Beef Burger
+<input type="checkbox" name="food"> Zinger Roll
+<input type="checkbox" name="food"> Arabic Nuggest6(pcs)
+
+<br><br>
+<label> Quantity:</label>
+<input type="Number" required>
+<br><br>
+
+<label for="Message">Message:</label> 
+<textarea id="Message" name="Message" rows="5" cols="30"
+ placeholder=" Write yuor message here...">
+</textarea>
+ <br><br>
+
+ <input type="submit" value="Place Order" style="background-color: purple; color: white ;">
+        
+    </form>
+
+
+
+    <!-- Footer -->
+     <footer>
+        <div id="Footer" >
+            <h2 class="main-heading2">Food Hub</h2>
+            <p> 
+                Delicious food for delivered fast,right to your door.
+            </p>
+            <p>&copy; 2026 FoodHub. Homemade Food.</p>
+            
+        </DIV>
+    </footer>
+   
+
+</body>
+</html>
